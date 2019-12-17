@@ -1,0 +1,157 @@
+#banniere{
+	display: flex;
+	flex-direction: row;
+	height: 8em;
+	margin: none;
+	padding: auto;
+}
+
+/*Les éléments suivants font tous partie de la bannière*/
+
+
+
+	#banniere .logo{
+		width: 25%;
+		float: left;
+	}
+
+	#banniere .facebook img {
+		position: relative;
+		top: 2%;
+		width: 30%;
+		height: auto;
+		display: flex;
+	}
+
+	#banniere .instagram img {
+		position: relative;
+		top: 2%;
+		width: 30%;
+		height: auto;
+		display: flex;
+	}
+	
+	#banniere h1{
+		position: relative;
+		top: 2%;
+		width: 100%;
+		height: auto;
+		display: flex;
+	}
+
+	#banniere #recherche{
+		position: relative;
+		top: 2%;
+		width: 100%;
+		height: 5%;
+		display: flex;
+	}
+
+
+#navbar{
+}
+/*Les éléments suivants font tous partie de la navbar*/
+
+	#navbar a {
+		text-decoration: none;
+	}
+
+	#navbar ul{
+		display: flex;
+		flex-direction: row;
+		list-style-type: none;
+	}
+
+	#navbar ul li{
+		float: left;
+		width: 25%;
+		text-align:center;
+		position: relative;
+	}
+
+	#navbar ul::after{
+		content:"";
+		display: table;
+		clear: both;
+	}
+
+	#navbar a:hover{
+		color: green;
+		border-bottom: 2px solid;
+	}
+
+	#navbar .deroule{
+		display: none;
+		position: absolute;
+		width: 100%;
+		z-index: 1000;
+	}
+
+	#navbar > ul li:hover .deroule{
+		display:flex;
+		flex-direction: column;
+	}
+
+	#navbar .deroule li {
+		float: none;
+		text-align: center;
+		width: 100%
+	}
+
+	#navbar .deroule a{
+		padding: 10%;
+		border-bottom: none;
+	}
+
+	#navbar .deroulant > a::after{
+		font-size: 12px;
+	}
+
+
+#page{
+	display: flex;
+	flex-direction: row;
+}
+
+#contenu {
+	width: 75%;
+	margin: 100px;
+}
+
+/*L'élément article est contenu dans la partie contenu*/
+	.article{
+		margin: 2%;
+		background-color: #CCCCCC;
+	}
+
+	.article {
+		padding-left: 5%;
+		padding-right: 5%;
+		padding-bottom: 2%;
+		text-align: justify;
+	}
+
+	.article img{
+		width: 100%;
+		position: relative;
+	}
+
+#aside {
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+	text-align: justify;
+}
+
+/*Les éléments suivants sont contenus dans la partie aside*/
+
+	#aside p{
+		
+	}
+	
+	#aside #bouton{
+		padding-top: 15em;
+		position: relative;
+		margin: auto;
+		width: 90%;		
+	}
